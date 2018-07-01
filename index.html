@@ -7,14 +7,73 @@
     <title>Kawasaki's Portfolio</title>
     
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
+    <style>
+
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-        </div>
+    <header class="header">
+        
     </header>
-    <section class="section">
 
+    <section class="hero is-large is-primary is-bold">
+        <div class="hero-head">
+            <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a href="#" class="navbar-item">
+                            Kawasaki Kiyoshi
+                        </a>
+                        <a class="navbar-burger burger" data-target="main-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <div id="main-menu" class="navbar-menu animated fadeOutUp">
+                        <div class="navbar-start"></div>
+                        <div class="navbar-end">
+                            <a href="#" class="navbar-item">Home</a>
+                            <a href="#" class="navbar-item">Projects</a>
+                            <a href="#" class="navbar-item">About</a>
+                            <a href="#" class="navbar-item">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <h1 class="title">SLIDER</h1>
+        </div>
     </section>
+
+    <section class="section">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu bibendum erat. Integer aliquam vitae leo non tempus.
+            Vestibulum imperdiet mi ac turpis vestibulum tempor. Nam et nunc sapien. Vivamus pretium sed velit lacinia consectetur.
+            Praesent non maximus dolor. Etiam scelerisque fermentum sapien vitae molestie. In lobortis justo non imperdiet. 
+        </p>
+        <p>
+            Vivamus semper, metus vitae consectetur facilisis, eros enim hendrerit risus, nec auctor enim dui nec sapien. Phasellus eu felis metus.
+            Curabitur id efficitur quam, vel pellentesque nibh. Sed rutrum lacinia mi quis suscipit. Vestibulum euismod nibh in feugiat sollicitudin.
+            In pellentesque id lectus non posuere. Vivamus vestibulum dui eget dignissim. 
+        </p>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p class="">Copyright 2018</p>
+        </div>
+    </footer>
+
+    <script>
+        $(".navbar-burger").click(function(){
+            $(".navbar-burger").toggleClass("is-active");
+            $("#main-menu").toggleClass("is-active fadeInDown fadeOutUp");
+        });
+    </script>
 </body>
 </html>
