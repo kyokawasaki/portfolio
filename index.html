@@ -13,31 +13,36 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/jquery.waypoints.min.js"></script>
-    
-    <style>
 
+    <style>
+        .hero {
+            background-image: url("img/banner.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+        .title {
+            color: white;
+            -webkit-mask-image: -webkit-linear-gradient(to right, rgba(255,255,255,1) 5%, transparent);
+	        -webkit-mask-image: linear-gradient(to right, rgba(255,255,255,1) 5%, transparent);
+        }
     </style>
 </head>
 <body>
     <header class="header">
-                            
-    </header>
-
-    <section class="hero is-large is-primary is-bold">
-        <div class="hero-head">
-            <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
-                <div class="container">
+        <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="container">
                 <div class="navbar-brand">
                     <a href="#" class="navbar-item">
                         Kawasaki Kiyoshi
                     </a>
-                    <a class="navbar-burger burger" data-target="main-menu">
+                    <span class="navbar-burger burger" data-target="main-menu">
                         <span></span>
                         <span></span>
                         <span></span>
-                    </a>
+                    </span>
                 </div>
-                <div id="main-menu" class="navbar-menu animated fadeOutUp">
+                <div id="main-menu" class="navbar-menu">
                     <div class="navbar-start"></div>
                     <div class="navbar-end">
                         <a href="#" class="navbar-item">Home</a>
@@ -48,9 +53,12 @@
                 </div>
             </div>
         </nav>
-        </div>
+    </header>
+
+    <section class="hero is-fullheight" style="background-image: url('img/banner.jpg');">
         <div class="hero-body">
-            <h1 class="title">SLIDER</h1>
+            <h1 class="title is-1 animated lightSpeedIn">LOREM IPSUM LOREM IPSUM</h1>
+            <h2></h2>
         </div>
     </section>
 
