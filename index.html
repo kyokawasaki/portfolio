@@ -26,6 +26,39 @@
             -webkit-mask-image: -webkit-linear-gradient(to right, rgba(255,255,255,1) 5%, transparent);
 	        -webkit-mask-image: linear-gradient(to right, rgba(255,255,255,1) 5%, transparent);
         }
+        .column {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .column:before{
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+        .column > i {
+            font-size: 8em;
+            color: rgba(0, 0, 0, .5);
+        }
+        .icon {
+            font-size: 3em;
+            text-align: center;
+        }
+        .is-ghost {
+            opacity: 0;
+        }
+        .project-1 {
+            background-color: lightpink;
+        }
+        .project-2 {
+            background-color: lightskyblue;
+        }
+        .project-3 {
+            background-color: lightgray;
+        }
+        .project-4 {
+            background-color: lightgoldenrodyellow;
+        }
     </style>
 </head>
 <body>
@@ -61,6 +94,21 @@
             <h2></h2>
         </div>
     </section>
+
+    <div id="projects" class="columns is-gapless">
+        <div class="column project-1 animated is-ghost">
+            <i class="fas fa-book"></i>
+        </div>
+        <div class="column project-2 animated is-ghost">
+            <i class="fas fa-cube"></i>
+        </div>
+        <div class="column project-3 animated is-ghost">
+            <i class="far fa-file-alt"></i>
+        </div>
+        <div class="column project-4 animated is-ghost">
+            <i class="far fa-paper-plane"></i>
+        </div>
+    </div>
 
     <section class="section">
             <p>
